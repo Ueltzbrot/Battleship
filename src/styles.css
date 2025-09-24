@@ -1,0 +1,73 @@
+
+.button-13 {
+    transition: all .5s ease;
+    color: #a972cb;
+    border: 3px solid white;
+    font-family:'Montserrat', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1;
+    font-size: 0.5rem;
+    font-weight: bold;
+    background-color : transparent;
+    padding: 0.2rem;
+    outline: none;
+    border-radius: 10px;
+
+}
+.button-13:hover {
+
+    color: #fff;
+    background-color: #a972cb;
+}
+
+.drop:hover .button-13{
+    background-color: #a972cb;
+    color: #fff;
+}
+
+.drop{
+    display:flex;
+    flex-direction: column;
+    width: fit-content;
+    font-size: 0.5rem;
+    list-style: none;
+    padding: 0.3rem;
+    line-height: 1;
+    border-radius: 4px;
+    padding-bottom: 0px;
+
+}
+
+.menu{
+    border: 3px solid white;
+
+    border-radius: 4px;
+    display:flex;
+    flex-direction: column;
+
+}
+
+.menu > *{
+    
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 0px, rgba(0, 0, 0, 0.23) 0px 0px 0px;
+    color: #a972cb;
+    font-family:'Montserrat', sans-serif;
+    text-transform: uppercase;
+    text-align:center;
+    align-items: start;
+    line-height: 1;
+    font-size: 0.4rem;
+    font-weight: bold;
+    background-color : transparent;
+    outline: none;
+    padding-left: 0px;
+    padding-bottom: 0.2rem;
+    padding-top: 0.2rem;
+}
+
+.dropMenu:hover{
+    transition: all .5s ease;
+    color: #fff;
+    background-color: #a972cb;
+}
