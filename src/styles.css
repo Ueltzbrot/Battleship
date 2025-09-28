@@ -1,73 +1,141 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #1e1e1e;
+    color: #fff;
+}
 
-.button-13 {
-    transition: all .5s ease;
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.con2 {
+    display: flex;
+    gap: 1rem; 
+}
+
+.Start, .weiter, .formButton {
+    transition: all 0.3s ease;
     color: #a972cb;
-    border: 3px solid white;
-    font-family:'Montserrat', sans-serif;
+    border: 2px solid #a972cb;
+    background-color: transparent;
+    font-weight: bold;
     text-transform: uppercase;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.Start:hover, .weiter:hover, .formButton:hover {
+    background-color: #a972cb;
+    color: #fff;
+}
+
+.Player, .Computer {
+    transition: all 0.3s ease;
+    color: #a972cb;
+    border: 2px solid #a972cb;
+    padding: 0.3rem 0.6rem;
+    border-radius: 8px;
+    font-weight: bold;
     text-align: center;
-    line-height: 1;
-    font-size: 0.5rem;
-    font-weight: bold;
-    background-color : transparent;
-    padding: 0.2rem;
-    outline: none;
+    cursor: pointer;
+}
+
+.Player:hover, .Computer:hover {
+    background-color: #a972cb;
+    color: #fff;
+}
+
+.spielfeldCon {
+    display: flex;
+    gap: 2rem;
+}
+
+.Spielfeld, .Shots {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    height: 20rem;
+    width: 20rem;
+    border: 2px solid #a972cb;
+    background-color: #111;
+}
+
+.Spielfeld > div, .Shots > div {
+    border: 1px solid #444;
+    background-color: #222;
+    transition: background-color 0.2s ease;
+    border-radius: 4px;
+}
+
+.FORM {
+    display: none;
+    display: grid;
+    gap: 1rem;
+    background-color: #2a2a2a;
+    padding: 1rem 1.5rem;
     border-radius: 10px;
-
-}
-.button-13:hover {
-
-    color: #fff;
-    background-color: #a972cb;
-}
-
-.drop:hover .button-13{
-    background-color: #a972cb;
-    color: #fff;
-}
-
-.drop{
-    display:flex;
-    flex-direction: column;
+    border: 1px solid #a972cb;
     width: fit-content;
-    font-size: 0.5rem;
-    list-style: none;
-    padding: 0.3rem;
-    line-height: 1;
-    border-radius: 4px;
-    padding-bottom: 0px;
-
 }
 
-.menu{
-    border: 3px solid white;
-
-    border-radius: 4px;
-    display:flex;
-    flex-direction: column;
-
+.ships {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
 }
 
-.menu > *{
-    
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 0px, rgba(0, 0, 0, 0.23) 0px 0px 0px;
-    color: #a972cb;
-    font-family:'Montserrat', sans-serif;
-    text-transform: uppercase;
-    text-align:center;
-    align-items: start;
-    line-height: 1;
-    font-size: 0.4rem;
-    font-weight: bold;
-    background-color : transparent;
-    outline: none;
-    padding-left: 0px;
-    padding-bottom: 0.2rem;
-    padding-top: 0.2rem;
+.ships label {
+    width: 100px;
 }
 
-.dropMenu:hover{
-    transition: all .5s ease;
+.ships input[type="number"], .ships select {
+    padding: 0.3rem 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #a972cb;
+    background-color: #111;
     color: #fff;
-    background-color: #a972cb;
+    width: 60px;
+}
+
+.ships input[type="number"]:focus, .ships select:focus {
+    outline: 2px solid #a972cb;
+}
+
+.weiter {
+    display: none;
+}
+
+
+
+
+
+
+/* Stil für disabled Buttons */
+.Start:disabled,
+.weiter:disabled,
+.formButton:disabled {
+    background-color: #444;       /* dunkler Hintergrund */
+    color: #888;                  /* graue Schrift */
+    border: 2px solid #666;       /* dezenter Rahmen */
+    cursor: not-allowed;           /* zeigt an, dass er nicht klickbar ist */
+    opacity: 0.7;                  /* leicht transparent */
+    box-shadow: none;              /* ohne Hover-Glow */
+}
+
+.Start:disabled:hover,
+.weiter:disabled:hover,
+.formButton:disabled:hover {
+    background-color: #444;       /* keine Änderung beim Hover */
+    color: #888;
+    transform: none;              /* keine Animation */
 }

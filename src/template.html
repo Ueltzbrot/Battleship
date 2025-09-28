@@ -1,19 +1,66 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <div class="drop">
-      <button class="button-13"> Dropdown
-      </button>
-      <div class="menu">
-        <li class="dropMenu">Jass</li>
-        <li class="dropMenu">Nein</li>
-        <li class="dropMenu">Vielleicht</li>
-      </div>
-    </div>
-  </body>
-</html>
+<!doctype html> <html lang="en"> 
+  <head> <meta charset="UTF-8" /> <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+    <title>Document</title> 
+  </head> 
+  <body> 
+    <div class="container"> 
+      <div class="con2"> 
+        <div class = "Player">two local Players</div> 
+        <div class="Computer">Computer</div> 
+      </div> 
+      <button class="Start">Start</button> 
+      <div class="spielfeldCon"> 
+        <div class="Spielfeld"></div> 
+        <div class="Shots"></div> </div> 
+        <button class="weiter">Weiter</button> 
+        <form class="FORM"> 
+          <div class="ships"> 
+            <label for="Carrier">Carrier</label><br> 
+            Reihe: <input type="number" id="CarrierRow" name="CarrierRow" min="1" max="10" required> 
+            Spalte: <input type="number" id="CarrierCol" name="CarrierCol" min="1" max="10" required> 
+            <select name="CarrierDir"> 
+              <option value="horizontal">horizontal</option> 
+              <option value="vertical">vertical</option> 
+            </select> 
+          </div> 
+          <div class="ships"> 
+            <label for="Battleship">Battleship</label><br> 
+            Reihe: <input type="number" id="BattleshipRow" name="BattleshipRow" min="1" max="10" required> 
+            Spalte: <input type="number" id="BattleshipCol" name="BattleshipCol" min="1" max="10" required> 
+            <select name="BattleshipDir"> 
+              <option value="horizontal">horizontal</option> 
+              <option value="vertical">vertical</option> 
+            </select> 
+          </div> 
+          <div class="ships"> 
+            <label for="Kreuzer">Kreuzer</label><br> 
+            Reihe: <input type="number" id="KreuzerRow" name="KreuzerRow" min="1" max="10" required> 
+            Spalte: <input type="number" id="KreuzerCol" name="KreuzerCol" min="1" max="10" required> 
+            <select name="KreuzerDir"> 
+              <option value="horizontal">horizontal</option> 
+              <option value="vertical">vertical</option> 
+            </select> 
+          </div> 
+          <div class="ships"> 
+            <label for="U-Boot">U-Boot</label><br> 
+            Reihe: <input type="number" id="UBootRow" name="UBootRow" min="1" max="10" required> 
+            Spalte: <input type="number" id="UBootCol" name="UBootCol" min="1" max="10" required> 
+            <select name="UBootDir"> 
+              <option value="horizontal">horizontal</option> 
+              <option value="vertical">vertical</option> 
+            </select> 
+          </div> 
+          <div class="ships"> 
+            <label for="Destroyer">Destroyer</label><br> 
+            Reihe: <input type="number" id="DestroyerRow" name="DestroyerRow" min="1" max="10" required> 
+            Spalte: <input type="number" id="DestroyerCol" name="DestroyerCol" min="1" max="10" required> 
+            <select name="DestroyerDir"> 
+              <option value="horizontal">horizontal</option> 
+              <option value="vertical">vertical</option> 
+            </select> 
+          </div> 
+          <button type="submit" class="formButton">Speichern</button> 
+        </form> 
+      </div> 
+    </body> 
+    </html>
